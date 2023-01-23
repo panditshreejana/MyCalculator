@@ -1,9 +1,15 @@
 package com.example.mycalculator;
 
+<<<<<<< HEAD
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+>>>>>>> 1df2b66a80a94e0083ee3b1b4261f554274c67e0
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.button.MaterialButton;
@@ -18,6 +24,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView resultTv,solutionTv;
     MaterialButton buttonC,buttonBrackOpen,buttonBrackClose;
     MaterialButton buttonDivide,buttonMultiply,buttonPlus,buttonMinus,buttonEquals;
+=======
+import com.google.android.material.button.MaterialButton;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    TextView resultTv,solutionTv;
+    MaterialButton buttonC,buttonBracketOpen,buttonBracketClose;
+    MaterialButton buttonDivide,buttonMultiply,buttonPlush,buttonMinus,buttonEqual;
+>>>>>>> 1df2b66a80a94e0083ee3b1b4261f554274c67e0
     MaterialButton button0,button1,button2,button3,button4,button5,button6,button7,button8,button9;
     MaterialButton buttonAC,buttonDot;
 
@@ -28,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultTv = findViewById(R.id.result_tv);
         solutionTv = findViewById(R.id.solution_tv);
 
+<<<<<<< HEAD
         assignId(buttonC,R.id.button_c);
         assignId(buttonBrackOpen,R.id.button_open_bracket);
         assignId(buttonBrackClose,R.id.button_close_bracket);
@@ -36,6 +52,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignId(buttonPlus,R.id.button_plus);
         assignId(buttonMinus,R.id.button_minus);
         assignId(buttonEquals,R.id.button_equals);
+=======
+        assignId(buttonC,R.id.button_C);
+        assignId(buttonBracketOpen,R.id.button_open_bracket);
+        assignId(buttonBracketClose,R.id.button_close_bracket);
+        assignId(buttonDivide,R.id.button_divide);
+        assignId(buttonMultiply,R.id.button_multiple);
+        assignId(buttonPlush,R.id.button_plus);
+        assignId(buttonMinus,R.id.button_minus);
+        assignId(buttonEqual,R.id.button_equals);
+>>>>>>> 1df2b66a80a94e0083ee3b1b4261f554274c67e0
         assignId(button0,R.id.button_0);
         assignId(button1,R.id.button_1);
         assignId(button2,R.id.button_2);
@@ -50,9 +76,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignId(buttonDot,R.id.button_dot);
 
 
+<<<<<<< HEAD
     }
 
     void assignId(MaterialButton btn,int id) {
+=======
+
+
+    }
+
+    void assignId(MaterialButton btn,int id){
+>>>>>>> 1df2b66a80a94e0083ee3b1b4261f554274c67e0
         btn = findViewById(id);
         btn.setOnClickListener(this);
     }
@@ -61,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         MaterialButton button =(MaterialButton) view;
         String buttonText = button.getText().toString();
+<<<<<<< HEAD
         String dataToCalculate = solutionTv.getText().toString();
 
         if(buttonText.equals("AC")) {
@@ -104,3 +139,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+=======
+        solutionTv.setText(buttonText);
+
+
+    }
+}
+>>>>>>> 1df2b66a80a94e0083ee3b1b4261f554274c67e0
