@@ -86,22 +86,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-//test
-
-
-
-
-//test1
    String getResult(String data) {
         try{
             Context context= Context.enter();
